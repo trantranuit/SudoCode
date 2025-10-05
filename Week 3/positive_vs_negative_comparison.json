@@ -1,0 +1,1724 @@
+{
+  "methodology": "Compare positive vs negative sentences from dataset using averaged word embeddings",
+  "dataset_info": {
+    "total_samples": 5206,
+    "filtered_samples": 3276,
+    "positive_samples": 1730,
+    "negative_samples": 1546,
+    "samples_used": 5
+  },
+  "selected_sentences": {
+    "positive": [
+      {
+        "id": 27283,
+        "text": " love the stuff he sell... you should help this guy with his logo and shop  it`s kinda Wordart"
+      },
+      {
+        "id": 10996,
+        "text": "  Yes. But, Cute AND Predictable works for you..."
+      },
+      {
+        "id": 4326,
+        "text": " this is funny, we just discussed Bela Lugosi  over dinner, his apearance in Plan B from outer space 'best' movie ever"
+      },
+      {
+        "id": 26166,
+        "text": "Finally able to get Flight Control for my Ipod. Best game app! 123  **** choppers lol"
+      },
+      {
+        "id": 8697,
+        "text": "Good for food shopping"
+      }
+    ],
+    "negative": [
+      {
+        "id": 2119,
+        "text": "ughhhhhhhhhhhh  :/"
+      },
+      {
+        "id": 14240,
+        "text": "is hating the weather. UGH."
+      },
+      {
+        "id": 20023,
+        "text": "missing Tim!"
+      },
+      {
+        "id": 9565,
+        "text": "  im just so lonely right now. maybe SADE GOT ME FEELING LIKE THIS"
+      },
+      {
+        "id": 21785,
+        "text": "i misss my phone,"
+      }
+    ]
+  },
+  "all_comparisons": [
+    {
+      "positive_id": 27283,
+      "negative_id": 2119,
+      "comparison_result": {
+        "sentence1": {
+          "text": " love the stuff he sell... you should help this guy with his logo and shop  it`s kinda Wordart",
+          "sentiment": "positive",
+          "found_words": [
+            "love",
+            "the",
+            "stuff",
+            "he",
+            "sell",
+            "you",
+            "should",
+            "help",
+            "this",
+            "guy",
+            "with",
+            "his",
+            "logo",
+            "and",
+            "shop",
+            "it",
+            "s",
+            "kinda"
+          ],
+          "missing_words": [
+            "wordart"
+          ],
+          "coverage": 94.73684210526315
+        },
+        "sentence2": {
+          "text": "ughhhhhhhhhhhh  :/",
+          "sentiment": "negative",
+          "found_words": [],
+          "missing_words": [
+            "ughhhhhhhhhhhh"
+          ],
+          "coverage": 0.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.0,
+          "interpretation": "Very Low similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "kinda",
+            "love",
+            "logo",
+            "stuff",
+            "sell",
+            "and",
+            "with",
+            "it",
+            "you",
+            "help",
+            "this",
+            "he",
+            "should",
+            "guy",
+            "s",
+            "the",
+            "shop",
+            "his"
+          ],
+          "unique_to_sentence2": []
+        }
+      }
+    },
+    {
+      "positive_id": 27283,
+      "negative_id": 14240,
+      "comparison_result": {
+        "sentence1": {
+          "text": " love the stuff he sell... you should help this guy with his logo and shop  it`s kinda Wordart",
+          "sentiment": "positive",
+          "found_words": [
+            "love",
+            "the",
+            "stuff",
+            "he",
+            "sell",
+            "you",
+            "should",
+            "help",
+            "this",
+            "guy",
+            "with",
+            "his",
+            "logo",
+            "and",
+            "shop",
+            "it",
+            "s",
+            "kinda"
+          ],
+          "missing_words": [
+            "wordart"
+          ],
+          "coverage": 94.73684210526315
+        },
+        "sentence2": {
+          "text": "is hating the weather. UGH.",
+          "sentiment": "negative",
+          "found_words": [
+            "is",
+            "hating",
+            "the",
+            "weather",
+            "ugh"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9807954430580139,
+          "interpretation": "Very High similarity",
+          "common_words": [
+            "the"
+          ],
+          "unique_to_sentence1": [
+            "this",
+            "he",
+            "kinda",
+            "love",
+            "should",
+            "guy",
+            "logo",
+            "stuff",
+            "sell",
+            "s",
+            "with",
+            "and",
+            "you",
+            "shop",
+            "it",
+            "help",
+            "his"
+          ],
+          "unique_to_sentence2": [
+            "weather",
+            "is",
+            "ugh",
+            "hating"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 27283,
+      "negative_id": 20023,
+      "comparison_result": {
+        "sentence1": {
+          "text": " love the stuff he sell... you should help this guy with his logo and shop  it`s kinda Wordart",
+          "sentiment": "positive",
+          "found_words": [
+            "love",
+            "the",
+            "stuff",
+            "he",
+            "sell",
+            "you",
+            "should",
+            "help",
+            "this",
+            "guy",
+            "with",
+            "his",
+            "logo",
+            "and",
+            "shop",
+            "it",
+            "s",
+            "kinda"
+          ],
+          "missing_words": [
+            "wordart"
+          ],
+          "coverage": 94.73684210526315
+        },
+        "sentence2": {
+          "text": "missing Tim!",
+          "sentiment": "negative",
+          "found_words": [
+            "missing",
+            "tim"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9349846839904785,
+          "interpretation": "High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "kinda",
+            "love",
+            "logo",
+            "stuff",
+            "sell",
+            "and",
+            "with",
+            "it",
+            "you",
+            "help",
+            "this",
+            "he",
+            "should",
+            "guy",
+            "s",
+            "the",
+            "shop",
+            "his"
+          ],
+          "unique_to_sentence2": [
+            "missing",
+            "tim"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 27283,
+      "negative_id": 9565,
+      "comparison_result": {
+        "sentence1": {
+          "text": " love the stuff he sell... you should help this guy with his logo and shop  it`s kinda Wordart",
+          "sentiment": "positive",
+          "found_words": [
+            "love",
+            "the",
+            "stuff",
+            "he",
+            "sell",
+            "you",
+            "should",
+            "help",
+            "this",
+            "guy",
+            "with",
+            "his",
+            "logo",
+            "and",
+            "shop",
+            "it",
+            "s",
+            "kinda"
+          ],
+          "missing_words": [
+            "wordart"
+          ],
+          "coverage": 94.73684210526315
+        },
+        "sentence2": {
+          "text": "  im just so lonely right now. maybe SADE GOT ME FEELING LIKE THIS",
+          "sentiment": "negative",
+          "found_words": [
+            "im",
+            "just",
+            "so",
+            "lonely",
+            "right",
+            "now",
+            "maybe",
+            "got",
+            "me",
+            "feeling",
+            "like",
+            "this"
+          ],
+          "missing_words": [
+            "sade"
+          ],
+          "coverage": 92.3076923076923
+        },
+        "comparison": {
+          "cosine_similarity": 0.9919977188110352,
+          "interpretation": "Very High similarity",
+          "common_words": [
+            "this"
+          ],
+          "unique_to_sentence1": [
+            "he",
+            "kinda",
+            "love",
+            "should",
+            "the",
+            "guy",
+            "logo",
+            "stuff",
+            "sell",
+            "s",
+            "with",
+            "and",
+            "you",
+            "shop",
+            "it",
+            "help",
+            "his"
+          ],
+          "unique_to_sentence2": [
+            "right",
+            "maybe",
+            "me",
+            "feeling",
+            "so",
+            "like",
+            "lonely",
+            "got",
+            "now",
+            "im",
+            "just"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 27283,
+      "negative_id": 21785,
+      "comparison_result": {
+        "sentence1": {
+          "text": " love the stuff he sell... you should help this guy with his logo and shop  it`s kinda Wordart",
+          "sentiment": "positive",
+          "found_words": [
+            "love",
+            "the",
+            "stuff",
+            "he",
+            "sell",
+            "you",
+            "should",
+            "help",
+            "this",
+            "guy",
+            "with",
+            "his",
+            "logo",
+            "and",
+            "shop",
+            "it",
+            "s",
+            "kinda"
+          ],
+          "missing_words": [
+            "wordart"
+          ],
+          "coverage": 94.73684210526315
+        },
+        "sentence2": {
+          "text": "i misss my phone,",
+          "sentiment": "negative",
+          "found_words": [
+            "i",
+            "my",
+            "phone"
+          ],
+          "missing_words": [
+            "misss"
+          ],
+          "coverage": 75.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9758830070495605,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "kinda",
+            "love",
+            "logo",
+            "stuff",
+            "sell",
+            "and",
+            "with",
+            "it",
+            "you",
+            "help",
+            "this",
+            "he",
+            "should",
+            "guy",
+            "s",
+            "the",
+            "shop",
+            "his"
+          ],
+          "unique_to_sentence2": [
+            "phone",
+            "my",
+            "i"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 10996,
+      "negative_id": 2119,
+      "comparison_result": {
+        "sentence1": {
+          "text": "  Yes. But, Cute AND Predictable works for you...",
+          "sentiment": "positive",
+          "found_words": [
+            "yes",
+            "but",
+            "cute",
+            "and",
+            "predictable",
+            "works",
+            "for",
+            "you"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "ughhhhhhhhhhhh  :/",
+          "sentiment": "negative",
+          "found_words": [],
+          "missing_words": [
+            "ughhhhhhhhhhhh"
+          ],
+          "coverage": 0.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.0,
+          "interpretation": "Very Low similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "cute",
+            "works",
+            "yes",
+            "but",
+            "and",
+            "you",
+            "for",
+            "predictable"
+          ],
+          "unique_to_sentence2": []
+        }
+      }
+    },
+    {
+      "positive_id": 10996,
+      "negative_id": 14240,
+      "comparison_result": {
+        "sentence1": {
+          "text": "  Yes. But, Cute AND Predictable works for you...",
+          "sentiment": "positive",
+          "found_words": [
+            "yes",
+            "but",
+            "cute",
+            "and",
+            "predictable",
+            "works",
+            "for",
+            "you"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "is hating the weather. UGH.",
+          "sentiment": "negative",
+          "found_words": [
+            "is",
+            "hating",
+            "the",
+            "weather",
+            "ugh"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9757205843925476,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "predictable",
+            "cute",
+            "works",
+            "but",
+            "and",
+            "you",
+            "for",
+            "yes"
+          ],
+          "unique_to_sentence2": [
+            "weather",
+            "hating",
+            "ugh",
+            "is",
+            "the"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 10996,
+      "negative_id": 20023,
+      "comparison_result": {
+        "sentence1": {
+          "text": "  Yes. But, Cute AND Predictable works for you...",
+          "sentiment": "positive",
+          "found_words": [
+            "yes",
+            "but",
+            "cute",
+            "and",
+            "predictable",
+            "works",
+            "for",
+            "you"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "missing Tim!",
+          "sentiment": "negative",
+          "found_words": [
+            "missing",
+            "tim"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9272881150245667,
+          "interpretation": "High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "predictable",
+            "cute",
+            "works",
+            "but",
+            "and",
+            "you",
+            "for",
+            "yes"
+          ],
+          "unique_to_sentence2": [
+            "missing",
+            "tim"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 10996,
+      "negative_id": 9565,
+      "comparison_result": {
+        "sentence1": {
+          "text": "  Yes. But, Cute AND Predictable works for you...",
+          "sentiment": "positive",
+          "found_words": [
+            "yes",
+            "but",
+            "cute",
+            "and",
+            "predictable",
+            "works",
+            "for",
+            "you"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "  im just so lonely right now. maybe SADE GOT ME FEELING LIKE THIS",
+          "sentiment": "negative",
+          "found_words": [
+            "im",
+            "just",
+            "so",
+            "lonely",
+            "right",
+            "now",
+            "maybe",
+            "got",
+            "me",
+            "feeling",
+            "like",
+            "this"
+          ],
+          "missing_words": [
+            "sade"
+          ],
+          "coverage": 92.3076923076923
+        },
+        "comparison": {
+          "cosine_similarity": 0.9837334156036377,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "predictable",
+            "cute",
+            "works",
+            "but",
+            "and",
+            "you",
+            "for",
+            "yes"
+          ],
+          "unique_to_sentence2": [
+            "right",
+            "this",
+            "maybe",
+            "me",
+            "feeling",
+            "so",
+            "like",
+            "lonely",
+            "got",
+            "now",
+            "im",
+            "just"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 10996,
+      "negative_id": 21785,
+      "comparison_result": {
+        "sentence1": {
+          "text": "  Yes. But, Cute AND Predictable works for you...",
+          "sentiment": "positive",
+          "found_words": [
+            "yes",
+            "but",
+            "cute",
+            "and",
+            "predictable",
+            "works",
+            "for",
+            "you"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "i misss my phone,",
+          "sentiment": "negative",
+          "found_words": [
+            "i",
+            "my",
+            "phone"
+          ],
+          "missing_words": [
+            "misss"
+          ],
+          "coverage": 75.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9610677361488342,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "predictable",
+            "cute",
+            "works",
+            "but",
+            "and",
+            "you",
+            "for",
+            "yes"
+          ],
+          "unique_to_sentence2": [
+            "phone",
+            "my",
+            "i"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 4326,
+      "negative_id": 2119,
+      "comparison_result": {
+        "sentence1": {
+          "text": " this is funny, we just discussed Bela Lugosi  over dinner, his apearance in Plan B from outer space 'best' movie ever",
+          "sentiment": "positive",
+          "found_words": [
+            "this",
+            "is",
+            "funny",
+            "we",
+            "just",
+            "over",
+            "dinner",
+            "his",
+            "in",
+            "plan",
+            "b",
+            "from",
+            "space",
+            "best",
+            "movie",
+            "ever"
+          ],
+          "missing_words": [
+            "discussed",
+            "bela",
+            "lugosi",
+            "apearance",
+            "outer"
+          ],
+          "coverage": 76.19047619047619
+        },
+        "sentence2": {
+          "text": "ughhhhhhhhhhhh  :/",
+          "sentiment": "negative",
+          "found_words": [],
+          "missing_words": [
+            "ughhhhhhhhhhhh"
+          ],
+          "coverage": 0.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.0,
+          "interpretation": "Very Low similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "ever",
+            "best",
+            "movie",
+            "funny",
+            "dinner",
+            "just",
+            "over",
+            "we",
+            "this",
+            "b",
+            "in",
+            "is",
+            "plan",
+            "from",
+            "space",
+            "his"
+          ],
+          "unique_to_sentence2": []
+        }
+      }
+    },
+    {
+      "positive_id": 4326,
+      "negative_id": 14240,
+      "comparison_result": {
+        "sentence1": {
+          "text": " this is funny, we just discussed Bela Lugosi  over dinner, his apearance in Plan B from outer space 'best' movie ever",
+          "sentiment": "positive",
+          "found_words": [
+            "this",
+            "is",
+            "funny",
+            "we",
+            "just",
+            "over",
+            "dinner",
+            "his",
+            "in",
+            "plan",
+            "b",
+            "from",
+            "space",
+            "best",
+            "movie",
+            "ever"
+          ],
+          "missing_words": [
+            "discussed",
+            "bela",
+            "lugosi",
+            "apearance",
+            "outer"
+          ],
+          "coverage": 76.19047619047619
+        },
+        "sentence2": {
+          "text": "is hating the weather. UGH.",
+          "sentiment": "negative",
+          "found_words": [
+            "is",
+            "hating",
+            "the",
+            "weather",
+            "ugh"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.972089946269989,
+          "interpretation": "Very High similarity",
+          "common_words": [
+            "is"
+          ],
+          "unique_to_sentence1": [
+            "ever",
+            "this",
+            "b",
+            "best",
+            "just",
+            "movie",
+            "we",
+            "in",
+            "funny",
+            "dinner",
+            "plan",
+            "from",
+            "over",
+            "space",
+            "his"
+          ],
+          "unique_to_sentence2": [
+            "weather",
+            "the",
+            "ugh",
+            "hating"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 4326,
+      "negative_id": 20023,
+      "comparison_result": {
+        "sentence1": {
+          "text": " this is funny, we just discussed Bela Lugosi  over dinner, his apearance in Plan B from outer space 'best' movie ever",
+          "sentiment": "positive",
+          "found_words": [
+            "this",
+            "is",
+            "funny",
+            "we",
+            "just",
+            "over",
+            "dinner",
+            "his",
+            "in",
+            "plan",
+            "b",
+            "from",
+            "space",
+            "best",
+            "movie",
+            "ever"
+          ],
+          "missing_words": [
+            "discussed",
+            "bela",
+            "lugosi",
+            "apearance",
+            "outer"
+          ],
+          "coverage": 76.19047619047619
+        },
+        "sentence2": {
+          "text": "missing Tim!",
+          "sentiment": "negative",
+          "found_words": [
+            "missing",
+            "tim"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9401760697364807,
+          "interpretation": "High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "ever",
+            "best",
+            "movie",
+            "funny",
+            "dinner",
+            "just",
+            "over",
+            "we",
+            "this",
+            "b",
+            "in",
+            "is",
+            "plan",
+            "from",
+            "space",
+            "his"
+          ],
+          "unique_to_sentence2": [
+            "missing",
+            "tim"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 4326,
+      "negative_id": 9565,
+      "comparison_result": {
+        "sentence1": {
+          "text": " this is funny, we just discussed Bela Lugosi  over dinner, his apearance in Plan B from outer space 'best' movie ever",
+          "sentiment": "positive",
+          "found_words": [
+            "this",
+            "is",
+            "funny",
+            "we",
+            "just",
+            "over",
+            "dinner",
+            "his",
+            "in",
+            "plan",
+            "b",
+            "from",
+            "space",
+            "best",
+            "movie",
+            "ever"
+          ],
+          "missing_words": [
+            "discussed",
+            "bela",
+            "lugosi",
+            "apearance",
+            "outer"
+          ],
+          "coverage": 76.19047619047619
+        },
+        "sentence2": {
+          "text": "  im just so lonely right now. maybe SADE GOT ME FEELING LIKE THIS",
+          "sentiment": "negative",
+          "found_words": [
+            "im",
+            "just",
+            "so",
+            "lonely",
+            "right",
+            "now",
+            "maybe",
+            "got",
+            "me",
+            "feeling",
+            "like",
+            "this"
+          ],
+          "missing_words": [
+            "sade"
+          ],
+          "coverage": 92.3076923076923
+        },
+        "comparison": {
+          "cosine_similarity": 0.9884234070777893,
+          "interpretation": "Very High similarity",
+          "common_words": [
+            "this",
+            "just"
+          ],
+          "unique_to_sentence1": [
+            "ever",
+            "b",
+            "best",
+            "movie",
+            "we",
+            "in",
+            "funny",
+            "dinner",
+            "is",
+            "plan",
+            "from",
+            "over",
+            "space",
+            "his"
+          ],
+          "unique_to_sentence2": [
+            "right",
+            "maybe",
+            "me",
+            "feeling",
+            "so",
+            "like",
+            "lonely",
+            "got",
+            "now",
+            "im"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 4326,
+      "negative_id": 21785,
+      "comparison_result": {
+        "sentence1": {
+          "text": " this is funny, we just discussed Bela Lugosi  over dinner, his apearance in Plan B from outer space 'best' movie ever",
+          "sentiment": "positive",
+          "found_words": [
+            "this",
+            "is",
+            "funny",
+            "we",
+            "just",
+            "over",
+            "dinner",
+            "his",
+            "in",
+            "plan",
+            "b",
+            "from",
+            "space",
+            "best",
+            "movie",
+            "ever"
+          ],
+          "missing_words": [
+            "discussed",
+            "bela",
+            "lugosi",
+            "apearance",
+            "outer"
+          ],
+          "coverage": 76.19047619047619
+        },
+        "sentence2": {
+          "text": "i misss my phone,",
+          "sentiment": "negative",
+          "found_words": [
+            "i",
+            "my",
+            "phone"
+          ],
+          "missing_words": [
+            "misss"
+          ],
+          "coverage": 75.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9721102714538574,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "ever",
+            "best",
+            "movie",
+            "funny",
+            "dinner",
+            "just",
+            "over",
+            "we",
+            "this",
+            "b",
+            "in",
+            "is",
+            "plan",
+            "from",
+            "space",
+            "his"
+          ],
+          "unique_to_sentence2": [
+            "phone",
+            "my",
+            "i"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 26166,
+      "negative_id": 2119,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Finally able to get Flight Control for my Ipod. Best game app! 123  **** choppers lol",
+          "sentiment": "positive",
+          "found_words": [
+            "finally",
+            "able",
+            "to",
+            "get",
+            "flight",
+            "control",
+            "for",
+            "my",
+            "ipod",
+            "best",
+            "game",
+            "app",
+            "lol"
+          ],
+          "missing_words": [
+            "123",
+            "choppers"
+          ],
+          "coverage": 86.66666666666667
+        },
+        "sentence2": {
+          "text": "ughhhhhhhhhhhh  :/",
+          "sentiment": "negative",
+          "found_words": [],
+          "missing_words": [
+            "ughhhhhhhhhhhh"
+          ],
+          "coverage": 0.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.0,
+          "interpretation": "Very Low similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "best",
+            "game",
+            "app",
+            "lol",
+            "flight",
+            "get",
+            "control",
+            "my",
+            "ipod",
+            "able",
+            "for",
+            "to",
+            "finally"
+          ],
+          "unique_to_sentence2": []
+        }
+      }
+    },
+    {
+      "positive_id": 26166,
+      "negative_id": 14240,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Finally able to get Flight Control for my Ipod. Best game app! 123  **** choppers lol",
+          "sentiment": "positive",
+          "found_words": [
+            "finally",
+            "able",
+            "to",
+            "get",
+            "flight",
+            "control",
+            "for",
+            "my",
+            "ipod",
+            "best",
+            "game",
+            "app",
+            "lol"
+          ],
+          "missing_words": [
+            "123",
+            "choppers"
+          ],
+          "coverage": 86.66666666666667
+        },
+        "sentence2": {
+          "text": "is hating the weather. UGH.",
+          "sentiment": "negative",
+          "found_words": [
+            "is",
+            "hating",
+            "the",
+            "weather",
+            "ugh"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9739297032356262,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "best",
+            "game",
+            "app",
+            "lol",
+            "flight",
+            "get",
+            "control",
+            "ipod",
+            "finally",
+            "able",
+            "for",
+            "to",
+            "my"
+          ],
+          "unique_to_sentence2": [
+            "weather",
+            "hating",
+            "ugh",
+            "is",
+            "the"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 26166,
+      "negative_id": 20023,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Finally able to get Flight Control for my Ipod. Best game app! 123  **** choppers lol",
+          "sentiment": "positive",
+          "found_words": [
+            "finally",
+            "able",
+            "to",
+            "get",
+            "flight",
+            "control",
+            "for",
+            "my",
+            "ipod",
+            "best",
+            "game",
+            "app",
+            "lol"
+          ],
+          "missing_words": [
+            "123",
+            "choppers"
+          ],
+          "coverage": 86.66666666666667
+        },
+        "sentence2": {
+          "text": "missing Tim!",
+          "sentiment": "negative",
+          "found_words": [
+            "missing",
+            "tim"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9427639842033386,
+          "interpretation": "High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "best",
+            "game",
+            "app",
+            "lol",
+            "flight",
+            "get",
+            "control",
+            "my",
+            "ipod",
+            "able",
+            "for",
+            "to",
+            "finally"
+          ],
+          "unique_to_sentence2": [
+            "missing",
+            "tim"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 26166,
+      "negative_id": 9565,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Finally able to get Flight Control for my Ipod. Best game app! 123  **** choppers lol",
+          "sentiment": "positive",
+          "found_words": [
+            "finally",
+            "able",
+            "to",
+            "get",
+            "flight",
+            "control",
+            "for",
+            "my",
+            "ipod",
+            "best",
+            "game",
+            "app",
+            "lol"
+          ],
+          "missing_words": [
+            "123",
+            "choppers"
+          ],
+          "coverage": 86.66666666666667
+        },
+        "sentence2": {
+          "text": "  im just so lonely right now. maybe SADE GOT ME FEELING LIKE THIS",
+          "sentiment": "negative",
+          "found_words": [
+            "im",
+            "just",
+            "so",
+            "lonely",
+            "right",
+            "now",
+            "maybe",
+            "got",
+            "me",
+            "feeling",
+            "like",
+            "this"
+          ],
+          "missing_words": [
+            "sade"
+          ],
+          "coverage": 92.3076923076923
+        },
+        "comparison": {
+          "cosine_similarity": 0.98891681432724,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "best",
+            "game",
+            "app",
+            "lol",
+            "flight",
+            "get",
+            "control",
+            "ipod",
+            "finally",
+            "able",
+            "for",
+            "to",
+            "my"
+          ],
+          "unique_to_sentence2": [
+            "right",
+            "this",
+            "maybe",
+            "me",
+            "feeling",
+            "so",
+            "like",
+            "lonely",
+            "got",
+            "now",
+            "im",
+            "just"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 26166,
+      "negative_id": 21785,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Finally able to get Flight Control for my Ipod. Best game app! 123  **** choppers lol",
+          "sentiment": "positive",
+          "found_words": [
+            "finally",
+            "able",
+            "to",
+            "get",
+            "flight",
+            "control",
+            "for",
+            "my",
+            "ipod",
+            "best",
+            "game",
+            "app",
+            "lol"
+          ],
+          "missing_words": [
+            "123",
+            "choppers"
+          ],
+          "coverage": 86.66666666666667
+        },
+        "sentence2": {
+          "text": "i misss my phone,",
+          "sentiment": "negative",
+          "found_words": [
+            "i",
+            "my",
+            "phone"
+          ],
+          "missing_words": [
+            "misss"
+          ],
+          "coverage": 75.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9804523587226868,
+          "interpretation": "Very High similarity",
+          "common_words": [
+            "my"
+          ],
+          "unique_to_sentence1": [
+            "best",
+            "game",
+            "app",
+            "lol",
+            "flight",
+            "get",
+            "control",
+            "ipod",
+            "able",
+            "for",
+            "to",
+            "finally"
+          ],
+          "unique_to_sentence2": [
+            "phone",
+            "i"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 8697,
+      "negative_id": 2119,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Good for food shopping",
+          "sentiment": "positive",
+          "found_words": [
+            "good",
+            "for",
+            "food",
+            "shopping"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "ughhhhhhhhhhhh  :/",
+          "sentiment": "negative",
+          "found_words": [],
+          "missing_words": [
+            "ughhhhhhhhhhhh"
+          ],
+          "coverage": 0.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.0,
+          "interpretation": "Very Low similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "for",
+            "food",
+            "good",
+            "shopping"
+          ],
+          "unique_to_sentence2": []
+        }
+      }
+    },
+    {
+      "positive_id": 8697,
+      "negative_id": 14240,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Good for food shopping",
+          "sentiment": "positive",
+          "found_words": [
+            "good",
+            "for",
+            "food",
+            "shopping"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "is hating the weather. UGH.",
+          "sentiment": "negative",
+          "found_words": [
+            "is",
+            "hating",
+            "the",
+            "weather",
+            "ugh"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9578660130500793,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "for",
+            "food",
+            "good",
+            "shopping"
+          ],
+          "unique_to_sentence2": [
+            "weather",
+            "hating",
+            "ugh",
+            "is",
+            "the"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 8697,
+      "negative_id": 20023,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Good for food shopping",
+          "sentiment": "positive",
+          "found_words": [
+            "good",
+            "for",
+            "food",
+            "shopping"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "missing Tim!",
+          "sentiment": "negative",
+          "found_words": [
+            "missing",
+            "tim"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9198220372200012,
+          "interpretation": "High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "for",
+            "food",
+            "good",
+            "shopping"
+          ],
+          "unique_to_sentence2": [
+            "missing",
+            "tim"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 8697,
+      "negative_id": 9565,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Good for food shopping",
+          "sentiment": "positive",
+          "found_words": [
+            "good",
+            "for",
+            "food",
+            "shopping"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "  im just so lonely right now. maybe SADE GOT ME FEELING LIKE THIS",
+          "sentiment": "negative",
+          "found_words": [
+            "im",
+            "just",
+            "so",
+            "lonely",
+            "right",
+            "now",
+            "maybe",
+            "got",
+            "me",
+            "feeling",
+            "like",
+            "this"
+          ],
+          "missing_words": [
+            "sade"
+          ],
+          "coverage": 92.3076923076923
+        },
+        "comparison": {
+          "cosine_similarity": 0.9760615825653076,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "for",
+            "food",
+            "good",
+            "shopping"
+          ],
+          "unique_to_sentence2": [
+            "right",
+            "this",
+            "maybe",
+            "me",
+            "feeling",
+            "so",
+            "like",
+            "lonely",
+            "got",
+            "now",
+            "im",
+            "just"
+          ]
+        }
+      }
+    },
+    {
+      "positive_id": 8697,
+      "negative_id": 21785,
+      "comparison_result": {
+        "sentence1": {
+          "text": "Good for food shopping",
+          "sentiment": "positive",
+          "found_words": [
+            "good",
+            "for",
+            "food",
+            "shopping"
+          ],
+          "missing_words": [],
+          "coverage": 100.0
+        },
+        "sentence2": {
+          "text": "i misss my phone,",
+          "sentiment": "negative",
+          "found_words": [
+            "i",
+            "my",
+            "phone"
+          ],
+          "missing_words": [
+            "misss"
+          ],
+          "coverage": 75.0
+        },
+        "comparison": {
+          "cosine_similarity": 0.9595237970352173,
+          "interpretation": "Very High similarity",
+          "common_words": [],
+          "unique_to_sentence1": [
+            "for",
+            "food",
+            "good",
+            "shopping"
+          ],
+          "unique_to_sentence2": [
+            "phone",
+            "my",
+            "i"
+          ]
+        }
+      }
+    }
+  ],
+  "statistics": {
+    "avg_similarity": 0.7721442675590515,
+    "min_similarity": 0.0,
+    "max_similarity": 0.9919977188110352,
+    "std_similarity": 0.3865275089801289
+  },
+  "assessment": "⚠️ Moderate - Có thể phân biệt một phần positive vs negative"
+}
